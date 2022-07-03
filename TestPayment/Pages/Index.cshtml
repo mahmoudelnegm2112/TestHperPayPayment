@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+<div class="col-12" style=" width: 50vw; margin-left : 25vw;">
+    <h1 class="display-4">Checkout Form</h1>
+    <form method="post" id="CheckoutForm">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input asp-for="CheckoutId" type="text" class="form-control rounded" placeholder="Checkout Id">
+                        <label asp-for="CheckoutId"></label>
+                        <span asp-validation-for="CheckoutId"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <button class="form-control btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        
+        </form>
+</div>
+ 

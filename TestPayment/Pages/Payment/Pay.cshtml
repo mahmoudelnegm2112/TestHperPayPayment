@@ -1,0 +1,9 @@
+﻿@page "{id}"
+@model TestPayment.Pages.Payment.PayModel
+@{
+}
+
+
+<script src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=@Model.CheckoutId"></script>
+
+<form action="@Model.ShopperResultUrl" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>
